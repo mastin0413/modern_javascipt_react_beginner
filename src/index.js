@@ -1,7 +1,5 @@
 import "./styles.css";
 
-console.log("aaaaaaa");
-
 document.getElementById("app").innerHTML = `
 <h1>Hello Vanilla!</h1>
 <div>
