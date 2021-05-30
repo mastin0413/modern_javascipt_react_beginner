@@ -39,22 +39,45 @@
 // function func1(str) {
 //   return str;
 // }
-const func1 = function (str) {
-  return str;
-};
-console.log(func1("func1です"));
-
-//アロー関数
-// const func2 = (str) => {
+// const func1 = function (str) {
 //   return str;
 // };
-const func2 = (str) => str;
-//{}で囲わない場合はreturn省略可能
-console.log(func2("ますちん"));
+// console.log(func1("func1です"));
 
-// const func3 = (num1, num2) => {
-//   return num1 + num2;
+// //アロー関数
+// // const func2 = (str) => {
+// //   return str;
+// // };
+// const func2 = (str) => str;
+// //{}で囲わない場合はreturn省略可能
+// console.log(func2("ますちん"));
+
+// // const func3 = (num1, num2) => {
+// //   return num1 + num2;
+// // };
+// const func3 = (num1, num2) => num1 + num2;
+
+// console.log(func3(230, 20));
+
+/**
+ * 分割代入
+ */
+// const myProfiele = {
+//   name: "ますかわ",
+//   age: "38"
 // };
-const func3 = (num1, num2) => num1 + num2;
+// const message1 = `名前は${myProfiele.name}です,年齢は${myProfiele.age}歳です`;
 
-console.log(func3(230, 20));
+// console.log(message1);
+
+// const { name, age } = myProfiele;
+// const message2 = `名前は${name}です,年齢は${age}歳です`;
+
+// console.log(message2);
+
+const myProfiele = ["増川", 38];
+const [name, age] = myProfiele;
+
+const message4 = `名前は${name}です、年齢は${age}歳です`;
+
+console.log(message4);
