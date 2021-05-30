@@ -32,4 +32,29 @@
 // const message = `私の名前は${name}です、${age}歳です`;
 // console.log(message);
 
+/*
+アロー関数
+*/
+//従来の関数
+// function func1(str) {
+//   return str;
+// }
+const func1 = function (str) {
+  return str;
+};
+console.log(func1("func1です"));
+
 //アロー関数
+// const func2 = (str) => {
+//   return str;
+// };
+const func2 = (str) => str;
+//{}で囲わない場合はreturn省略可能
+console.log(func2("ますちん"));
+
+// const func3 = (num1, num2) => {
+//   return num1 + num2;
+// };
+const func3 = (num1, num2) => num1 + num2;
+
+console.log(func3(230, 20));
